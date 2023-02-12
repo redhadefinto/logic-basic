@@ -1,0 +1,9 @@
+1. start
+2. masukan input berupa string contoh "Jakarta"
+3. validasi jika input selain dari string maka "input harus string" kemudian selesai
+4. jika tidak lanjut ketahap selanjutnya
+5. melakukan perulangan setiap karakter yang harus ada huruf a nya
+6. jika ada input yang di hasilkan dari perulangan tadi huruf a nya di ganti dengan o
+   contoh "Jakarta" => "jokorto"
+7. input telah berubah huruf konsonannya 
+8. selesai

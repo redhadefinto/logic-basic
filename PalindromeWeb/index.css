@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.syarat {
+  padding: 3rem;
+}
+
+ol li {
+  margin: 1rem 1.5rem;
+}
+
+#container-result {
+  border: 2px solid red;
+  padding: 2rem 5rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -12,6 +12,30 @@
   box-sizing: border-box;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #021227;
+  border-radius: 10px;
+  color: #021227;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3cba54;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3cba5399;
+}
+
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);

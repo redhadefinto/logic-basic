@@ -10,11 +10,11 @@ const avarage = () => {
     let pattern = /^[0-9]+$/;
     if (mtk.value.match(pattern) && bIndo.value.match(pattern) && bInggris.value.match(pattern) && ipa.value.match(pattern)) {
       if(mtk.value >= 0 && mtk.value <= 100 && bIndo.value >= 0  && bIndo.value <= 100 && bInggris.value >= 0 && bInggris.value <= 100 && ipa.value >= 0 && ipa.value <= 100) {
-        mtk = parseInt(mtk.value);
-        bIndo = parseInt(bIndo.value);
-        bInggris = parseInt(bInggris.value);
-        ipa = parseInt(ipa.value);
-        const result = (mtk + bIndo + bInggris + ipa) / 4;
+        let ResultMtk = parseInt(mtk.value);
+        let ResultBIndo = parseInt(bIndo.value);
+        let ResultBInggris = parseInt(bInggris.value);
+        let ResultIpa = parseInt(ipa.value);
+        const result = (ResultMtk + ResultBIndo + ResultBInggris + ResultIpa) / 4;
         console.log(`Nilai rata rata: ${result}`);
         if (result <= 100 && result >= 90) {
           return containerResult.innerHTML = `<p>Nilai rata rata: ${result}</p> <p>Grade: A</p>`;

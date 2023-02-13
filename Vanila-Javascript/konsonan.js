@@ -21,4 +21,4 @@ const konsonan = (input) => {
   }
 }
 
-konsonan('kAsar')
+konsonan('ad')

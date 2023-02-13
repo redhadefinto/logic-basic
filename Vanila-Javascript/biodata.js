@@ -4,6 +4,11 @@ const biodata = {
   hobbies: ['ngoding', 'playing game'],
   isMarried: false,
   schoolList: [{
+    name: "SDN 17 Gunung Pangilun",
+    yearIn: 2010,
+    yearOut: 2016,
+    major: null
+  },{
     name: "MTsN Model Padang",
     yearIn: 2016,
     yearOut: 2019,

@@ -22,4 +22,4 @@ const avarage = (mtk, bIndo, bInggris, ipa) => {
   }
 }
 
-avarage(101, 90, 90, 0)
+avarage(100, 90, 80, 90)

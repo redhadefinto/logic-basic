@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+  <!-- Font Second -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container-header">
+      <div class="container-logo">
+        <img src="./Assets/Logo/R-logo.png" alt="R-logo" width="50px">
+        <p>edha</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <select name="project" id="project" onchange="window.location.href=this.value">
+              <option value="./index.html">Project</option>
+              <option value="./AvarageWeb/index.html">Avarage</option>
+              <option value="./KonsonanWeb/index.html">Konsonan</option>
+              <option value="./PalindromeWeb/index.html">Palindrome</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="main-container">
+      <section class="left">
+        <h1 class="title">Logic Basic</h1>
+        <p class="description">Website ini saya rancang untuk melatih logika dasar saya. <br />
+          yang dimana di dalam projectnya saya mengerjakannya dengan valina javaScript
+        </p>
+        <button class="btn" id="btn-start">Get Started</button>
+      </section>
+      <section class="right">
+        <div class="container-right">
+          <div class="container-planet">
+            <img src="./Assets/Logo/Planet.png" alt="planet" width="150" />
+          </div>
+          <div class="container-img">
+            <img src="./Assets/Spaceman_Rocket.png" alt="Rocket" width="50%" />
+          </div>
+        </div>
+      </section>
+      <section class="modal" id="modal">
+        <h1 class="modal-title">Get Started</h1>
+        <hr />
+        <div class="container-btn">
+          <button class="btn-modal"><a href="./AvarageWeb/index.html">Avarage</a></button>
+          <button class="btn-modal"><a href="./KonsonanWeb/index.html">Konsonan</a></button>
+          <button class="btn-modal"><a href="./PalindromeWeb/index.html">Palindrome</a></button>
+          <button class="btn-modal cancel" id="cancel"><a href="">Cancel</a></button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

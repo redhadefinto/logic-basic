@@ -4,10 +4,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Konsonan</title>
   <link rel="stylesheet" href="./index.css">
+    <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+  <!-- Font Second -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="container-header">
+      <div class="container-logo">
+        <img src="../Assets/Logo/R-logo.png" alt="R-logo" width="50px">
+        <p>edha</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <select name="project" id="project" onchange="window.location.href=this.value">
+              <option value="./index.html">Konsonan</option>
+              <option value="../AvarageWeb/index.html">Avarage</option>
+              <option value="../PalindromeWeb/index.html">Palindrome</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main>
     <section class="main">
       <h1 class="main-title">Konsonan Vocal</h1>
@@ -15,14 +43,20 @@
         <h2 class="syarat-title">Syarat Ketentuan: </h2>
         <ul>
           <li>Konsonan akan mengubah huruf vocal a/A menjadi huruf o</li>
-          <li>Konsonan harus berikan string/huruf</li>
+          <li>Konsonan harus string/huruf</li>
+          <li>Contoh: "Jakarta" menjadi "Jokorto"</li>
         </ul>
       </div>
-      <label for="mtk">
-        Masukan kalimat
+      <div class="container-input">
+        <label for="mtk">
+          Masukan kalimat
+        </label>
         <input type="text" name="" id="input" />
-      </label>
-      <button id="btn">Submit</button>
+      </div>
+      <div class="container-btn">
+        <button id="btn">Submit</button>
+        <button id="btn-reset" onclick="reset()">Reset</button>
+      </div>
       <div id="container-result">
         <h3>Hasil Konsonan</h3>
       </div>

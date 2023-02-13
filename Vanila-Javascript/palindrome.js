@@ -17,4 +17,4 @@ const palindrome = (input) => {
   }
 }
 
-palindrome('mihja')
+palindrome('ma')

@@ -6,35 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./index.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+  <!-- Font Second -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="container-header">
+      <div class="container-logo">
+        <img src="../Assets/Logo/R-logo.png" alt="R-logo" width="50px">
+        <p>edha</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <select name="project" id="project" onchange="window.location.href=this.value">
+              <option value="./index.html">Avarage</option>
+              <option value="../KonsonanWeb/index.html">Konsonan</option>
+              <option value="../PalindromeWeb/index.html">Palindrome</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main>
     <section class="main">
-      <h1 class="main-title">Mencari nilai rata rata UN</h1>
-      <div class="syarat">
-        <h2 class="syarat-title">Syarat Ketentuan: </h2>
-        <ol>
-          <li>input harus di isi semua</li>
-          <li>input harus lebih dari 0</li>
-        </ol>
+      <h1 class="main-title">Mencari nilai rata rata</h1>
+      <div class="container-condition">
+        <div class="syarat">
+          <h2 class="syarat-title">Syarat Input</h2>
+          <ul>
+            <li>input harus di isi semua</li>
+            <li>input harus berupa angka/number</li>
+            <li>input harus didalam range 0 - 100</li>
+          </ul>
+        </div>
+        <div class="ketentuan"> 
+          <h2 class="ketentuan-title">Ketentuan Grade</h2>
+          <ul>
+            <li>90 - 100 = A</li>
+            <li>80 - 89 = B</li>
+            <li>70 - 79 = C</li>
+            <li>60 - 69 = D</li>
+            <li>0 - 59 = E</li>
+          </ul>
+        </div>
       </div>
-      <label for="mtk">
-        Input untuk mtk
+      <div class="container-input">
+        <label for="mtk" class="title-input">
+          Nilai MTK
+        </label>
         <input type="text" name="" id="mtk" />
-      </label>
-      <label for="b-indo">
-        Input untuk bahasa Indonesia
+        <label for="b-indo" class="title-input">
+          Nilai Bahasa Indonesia
+        </label>
         <input type="text" name="" id="b-indo" />
-      </label>
-      <label for="b-inggris">
-        Input untuk mtk
+        <label for="b-inggris" class="title-input">
+          Nilai Bahasa Inggris 
+        </label>
         <input type="text" name="" id="b-inggris" />
-      </label>
-      <label for="ipa">
-        Input untuk ipa
+        <label for="ipa" class="title-input">
+          Nilai IPA
+        </label>
         <input type="text" name="" id="ipa" />
-      </label>
-      <button id="btn">Submit</button>
+      </div>
+      <div class="container-btn">
+        <button id="btn">Submit</button>
+        <button id="btn-reset" onclick="reset()">Reset</button>
+      </div>
       <div id="container-result">
         <h3>Hasil rata rata</h3>
       </div>

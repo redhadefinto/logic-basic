@@ -2,7 +2,7 @@
 2. input text wajib menggunakan string
 3. input text harus lebih dari 2 karakter / huruf
 3. buat variabel tampungan
-4. pindahkan posisi tiap huruf dari belakang menuju ke depan sampai berpindah 
+4. pindahkan posisi tiap huruf dari belakang kata menuju ke depan kata sampai berpindah 
    dan tampung ke variabel tampungan tadi
 5. kita cek jika variabel penampung sama dengan input
 6. maka outputnya palindrome

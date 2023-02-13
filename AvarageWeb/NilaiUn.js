@@ -1,6 +1,6 @@
 const avarage = () => {
-  let mtk = document.getElementById('mtk')
   let btn = document.getElementById('btn')
+  let mtk = document.getElementById('mtk')
   let bIndo = document.getElementById('b-indo')
   let bInggris = document.getElementById('b-inggris')
   let ipa = document.getElementById('ipa')
@@ -37,3 +37,17 @@ const avarage = () => {
 }
 
 avarage()
+
+const reset = () => {
+  const btnReset = document.getElementById("btn-reset");
+  let mtk = document.getElementById("mtk");
+  let bIndo = document.getElementById("b-indo");
+  let bInggris = document.getElementById("b-inggris");
+  let ipa = document.getElementById("ipa");
+  const containerResult = document.getElementById("container-result");
+  mtk.value = '';
+  bIndo.value = '';
+  bInggris.value = '';
+  ipa.value = ''
+  containerResult.innerHTML = `<b><p>Hasil Rata Rata</p></b>`;
+};

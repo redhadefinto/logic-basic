@@ -4,27 +4,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Palindrome</title>
   <link rel="stylesheet" href="./index.css">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+  <!-- Font Second -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <div class="container-header">
+      <div class="container-logo">
+        <img src="../Assets/Logo/R-logo.png" alt="R-logo" width="50px">
+        <p>edha</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <select name="project" id="project" onchange="window.location.href=this.value">
+              <option value="./index.html">Palindrome</option>
+              <option value="../AvarageWeb/index.html">Avarage</option>
+              <option value="../KonsonanWeb/index.html">Konsonan</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main>
     <section class="main">
       <h1 class="main-title">Palindrome Vocal</h1>
       <div class="syarat">
         <h2 class="syarat-title">Syarat Ketentuan: </h2>
         <ul>
-          <li>Konsonan akan mengubah huruf vocal a/A menjadi huruf o</li>
-          <li>Konsonan harus berikan string/huruf</li>
+          <li>Huruf wajib menggunakan string / huruf</li>
+          <li>palindrome akan mengecek apakah jika kata dibalik akan sama <br /> dengan kata awalnya</li>
         </ul>
       </div>
-      <label for="input">
-        Masukan kalimat
+      <div class="container-input">
+        <label for="mtk">
+          Masukan kalimat
+        </label>
         <input type="text" name="" id="input" />
-      </label>
-      <button id="btn">Submit</button>
+      </div>
+      <div class="container-btn">
+        <button id="btn">Submit</button>
+        <button id="btn-reset" onclick="reset()">Reset</button>
+      </div>
       <div id="container-result">
-        <h3>Hasil Konsonan</h3>
+        <h3>Hasil Palindrome</h3>
       </div>
     </section>
     <script src="./Palindrome.js"></script>

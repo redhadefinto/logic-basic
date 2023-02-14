@@ -3,18 +3,14 @@ const palindrome = () => {
   let input = document.getElementById("input");
   const containerResult = document.getElementById("container-result");
   btn.addEventListener('click', () => {
+    const string = input.value.toString();
     let pattern = /^[A-Z,a-z]+$/;
-    if(input.value.match(pattern)) {
-      if(input.value.length > 2) {
-        const result = input.value.toLowerCase();
-        // console.log(input.value)
+    if(string.match(pattern)) {
+      if(string.length > 2) {
+        const result = string.toLowerCase();
         let palindrome = [...result];
         palindrome = palindrome.reverse();
         palindrome = palindrome.join("");
-        palindrome = palindrome.toString();
-        console.log(palindrome)
-        // console.log(`input Awal: ${input}`);
-        // console.log(`input palindrome: ${palindrome}`);
         if (palindrome == result) {
           return containerResult.innerHTML = `<p>Kata yang anda masukan <b>palindrome</b></p>`
         } else {

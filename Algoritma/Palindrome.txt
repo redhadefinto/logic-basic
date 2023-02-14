@@ -3,10 +3,10 @@
 3. jika tidak lanjut ke langkah 11 
 4. input text harus lebih dari 2 karakter / huruf
 5. jika tidak lanjut ke langkah 11
-6. buat variabel tampungan
+6. buat variabel result
 7. pindahkan posisi tiap huruf dari belakang kata menuju ke depan kata sampai berpindah 
-   dan tampung ke variabel tampungan tadi
-8. kita cek jika variabel penampung sama dengan input
+   dan tampung ke variabel result tadi
+8. kita cek jika variabel result sama dengan input
 9. maka outputnya palindrome
 10. jika tidak output bukan palindrome
 11. selesai

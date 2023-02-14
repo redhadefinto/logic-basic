@@ -5,5 +5,5 @@
 5. melakukan perulangan setiap karakter yang ada huruf a / A 
 6. jika ada input yang di hasilkan dari perulangan tadi huruf a nya di ganti dengan o
    contoh "Jakarta" => "jokorto"
-7. input telah berubah huruf konsonannya 
+7. output text telah berubah huruf konsonannya 
 8. selesai

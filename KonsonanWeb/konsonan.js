@@ -3,10 +3,10 @@ const konsonan = () => {
   const input = document.getElementById('input')
   const containerResult = document.getElementById('container-result')
   btn.addEventListener('click', () => {
-    console.log('btn di click')
+    let string = input.value.toString()
     let pattern = /^[A-Z,a-z]+$/
-    if (input.value.match(pattern)) {
-      let a = [...input.value];
+    if (string.match(pattern)) {
+      let a = [...string];
       let result = "";
       for (let i = 0; i < a.length; i++) {
         if (a[i] === "a" || a[i] === "A") {
@@ -14,7 +14,7 @@ const konsonan = () => {
         }
         result = result + a[i];
         a[i].length - 1;
-        if (result == input.value) {
+        if (result == string) {
           return containerResult.innerHTML = `<p>input yang anda masukan tidak memiliki huruf a nya jadi tidak ada yg berubah :)</p><br/> 
           <b><p>input akhir: ${result}</p><b/>`;
         }

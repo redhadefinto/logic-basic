@@ -6,7 +6,6 @@ const avarage = () => {
   let ipa = document.getElementById('ipa')
   const containerResult = document.getElementById('container-result')
   btn.addEventListener('click', () => {
-    console.log('button di click')
     let pattern = /^[0-9]+$/;
     if (mtk.value.match(pattern) && bIndo.value.match(pattern) && bInggris.value.match(pattern) && ipa.value.match(pattern)) {
       if(mtk.value >= 0 && mtk.value <= 100 && bIndo.value >= 0  && bIndo.value <= 100 && bInggris.value >= 0 && bInggris.value <= 100 && ipa.value >= 0 && ipa.value <= 100) {
@@ -16,19 +15,19 @@ const avarage = () => {
         let ResultIpa = parseInt(ipa.value);
         const result = (ResultMtk + ResultBIndo + ResultBInggris + ResultIpa) / 4;
         console.log(`Nilai rata rata: ${result}`);
-        if (result <= 100 && result >= 90) {
+        if (result >= 90) {
           return containerResult.innerHTML = `<p>Nilai rata rata: ${result}</p> <p>Grade: A</p>`;
-        } else if (result <= 89 && result >= 80) {
+        } else if (result >= 80) {
           return (containerResult.innerHTML = `<p>Nilai rata rata: ${result}</p> <p>Grade: B</p>`);
-        } else if (result <= 79 && result >= 70) {
+        } else if (result >= 70) {
           return (containerResult.innerHTML = `<p>Nilai rata rata: ${result}</p> <p>Grade: C</p>`);
-        } else if (result <= 69 && result >= 60) {
+        } else if (result >= 60) {
           return (containerResult.innerHTML = `<p>Nilai rata rata: ${result}</p> <p>Grade: D</p>`);
         } else {
           return (containerResult.innerHTML = `<p>Nilai rata rata: ${result}</p> <p>Grade: E</p>`);
         }
       } else {
-        return (containerResult.innerHTML = `<p>Angka harus di range antara 0 - 100</p>`)
+        return (containerResult.innerHTML = `<p>Angka harus di range  0 - 100</p>`)
       }
     } else {
       return(containerResult.innerHTML = `<p>Masukan Nilai Anda Wajib Menggunakan Angka !!</p>`)

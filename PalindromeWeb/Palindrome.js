@@ -7,7 +7,7 @@ const palindrome = () => {
     if(input.value.match(pattern)) {
       if(input.value.length > 2) {
         const result = input.value.toLowerCase();
-        console.log(input.value)
+        // console.log(input.value)
         let palindrome = [...result];
         palindrome = palindrome.reverse();
         palindrome = palindrome.join("");

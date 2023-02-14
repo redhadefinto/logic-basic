@@ -1,4 +1,4 @@
-1. start
+1. mulai
 2. masukan input berupa string contoh "Jakarta"
 3. validasi jika input selain dari string maka "input harus string" kemudian selesai
 4. jika tidak lanjut ketahap selanjutnya
